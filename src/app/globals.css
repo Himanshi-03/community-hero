@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #161616;
+  --foreground: #f0ede5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Inverted neutral scale: every page already correctly uses neutral-900
+     for primary text and neutral-50/white for light backgrounds. Inverting
+     the scale here (instead of rewriting every page) flips the whole app
+     from light theme to dark theme while preserving those relationships -
+     neutral-900 is now near-white text, neutral-50 is now near-black surface. */
+  --color-neutral-50: #1c1c1c;
+  --color-neutral-100: #242424;
+  --color-neutral-200: #333333;
+  --color-neutral-300: #4d4d4d;
+  --color-neutral-400: #767068;
+  --color-neutral-500: #9a9183;
+  --color-neutral-600: #b8b2a3;
+  --color-neutral-700: #ddd8cc;
+  --color-neutral-800: #ede9e0;
+  --color-neutral-900: #f5f3ed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+/* Leaflet's popup styling is hardcoded white in the library's own CSS,
+   so Tailwind classes on our content don't reach the outer wrapper.
+   Override explicitly to match the dark theme. */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #1c1c1c;
+  color: #f5f3ed;
+}
+.leaflet-popup-content-wrapper a {
+  color: #34d399;
+}
