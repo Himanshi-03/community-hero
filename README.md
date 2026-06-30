@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [https://community-hero-orpin.vercel.app/](https://community-hero-orpin.vercel.app/) with your browser to see the result.
+Open [https://community-hero-988408502513.asia-south1.run.app/](https://community-hero-988408502513.asia-south1.run.app/) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
