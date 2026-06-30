@@ -28,6 +28,13 @@ Administrators receive a dedicated dashboard to assign, update, and resolve comp
 
 ---
 
+
+##  Live Demo: https://community-hero-988408502513.asia-south1.run.app/
+
+
+---
+
+
 # ✨ Features
 
 ## 👥 Citizen Features
@@ -256,16 +263,6 @@ npm run dev
 
 ---
 
-# 👩‍💻 Team
-
-**Team Name:** *Your Team Name*
-
-| Name | Role |
-|------|------|
-| Himanshi Srivastava | Full Stack Developer |
-| Member 2 | Backend Developer |
-| Member 3 | UI/UX Designer |
-| Member 4 | AI Developer |
 
 ---
 
@@ -281,10 +278,6 @@ Contributions are welcome!
 
 ---
 
-# 📄 License
 
-This project is developed for the **Myntra Hackathon** and is intended for educational and demonstration purposes.
-
----
 
 ## ⭐ If you like this project, don't forget to star the repository!
