@@ -1,36 +1,290 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Community Hero – Hyperlocal Problem Solver
 
-## Getting Started
+Community Hero is a full-stack AI-powered web application that enables citizens to report, verify, and track local civic issues such as potholes, garbage accumulation, streetlight failures, and water leaks. The platform promotes transparency by allowing users to monitor complaint status while helping authorities prioritize issues using community support and AI-assisted automation.
 
-First, run the development server:
+---
+
+## 🚀 Problem Statement
+
+**Problem Statement 2: Community Hero – Hyperlocal Problem Solver**
+
+Many civic issues remain unresolved due to fragmented reporting systems, duplicate complaints, and a lack of transparency. Community Hero provides a centralized platform where citizens can report local infrastructure problems, track their progress, and assist authorities in prioritizing issues.
+
+---
+
+## 💡 Solution Overview
+
+Community Hero transforms a simple 30-second reporting process into a structured civic record.
+
+Users can:
+- 📸 Capture and upload photos of local issues.
+- 📍 Automatically attach the current location using browser geolocation.
+- 🤖 Use AI to classify the issue type, determine severity, and generate a description.
+- 👍 Support existing reports instead of creating duplicates.
+- 🗺️ Track complaints on an interactive live map.
+- 📊 Monitor complaint progress through a transparent six-stage workflow.
+
+Administrators receive a dedicated dashboard to assign, update, and resolve complaints efficiently.
+
+---
+
+# ✨ Features
+
+## 👥 Citizen Features
+
+- Secure User Authentication
+- Photo-based Complaint Reporting
+- Automatic Browser Geolocation
+- AI-powered Issue Categorization
+- Interactive Live Map
+- Community Upvoting System
+- My Reports Dashboard
+- Search & Filter Complaints
+- Edit/Delete Pending Reports
+- Complaint Status Tracking
+- Feedback & Star Rating System
+- Citizen Reputation Badges
+
+---
+
+## 🤖 AI Features
+
+Using **Google Gemini Vision API**, the platform automatically:
+
+- Detects issue category
+- Predicts severity level
+- Generates a complaint description
+
+Supported Categories:
+
+- 🕳️ Pothole
+- 💡 Streetlight Issue
+- 🗑️ Garbage
+- 💧 Water Leak
+- 📌 Others
+
+---
+
+## 📊 Public Transparency Dashboard
+
+Everyone can view:
+
+- Total Complaints
+- Pending Complaints
+- Resolved Complaints
+- Average Resolution Time
+- Category-wise Statistics
+- 7-Day Complaint Trend
+
+---
+
+## 🛠️ Admin Features
+
+- Admin Login
+- Complaint Assignment
+- Status Updates
+- Emergency Flagging
+- Analytics Dashboard
+- Complaint Management
+
+---
+
+## 🔄 Complaint Workflow
+
+```
+Submitted
+      ↓
+Under Review
+      ↓
+Assigned
+      ↓
+In Progress
+      ↓
+Resolved
+      ↓
+Closed
+```
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+
+## Backend
+
+- Supabase
+- PostgreSQL
+
+## Authentication
+
+- Supabase Authentication
+
+## Storage
+
+- Supabase Storage
+
+## Maps
+
+- Leaflet
+- React Leaflet
+- OpenStreetMap
+
+## AI
+
+- Google Gemini API (Vision)
+
+## Deployment
+
+- Google Cloud Run
+
+## Version Control
+
+- Git
+- GitHub
+
+---
+
+# ☁ Google Technologies Used
+
+- ✅ Google Cloud Run
+- ✅ Google Buildpacks
+- ✅ Google AI Studio
+- ✅ Gemini Vision API
+
+---
+
+# 📂 Project Structure
+
+```
+Community-Hero
+│
+├── app/
+├── components/
+├── public/
+├── lib/
+├── styles/
+├── utils/
+├── supabase/
+├── screenshots/
+├── package.json
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 📸 Screenshots
+
+> Add screenshots of your project inside the **screenshots/** folder.
+
+Example:
+
+```
+screenshots/
+│
+├── home.png
+├── report.png
+├── dashboard.png
+├── map.png
+└── admin.png
+```
+
+Then display them like:
+
+```markdown
+## Home Page
+
+![Home](screenshots/home.png)
+
+## Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+```
+
+---
+
+# ⚙ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/community-hero.git
+```
+
+Go to project directory
+
+```bash
+cd community-hero
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create environment variables
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+GEMINI_API_KEY=
+```
+
+Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [https://community-hero-988408502513.asia-south1.run.app/](https://community-hero-988408502513.asia-south1.run.app/) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 🌟 Future Improvements
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Mobile Application
+- Push Notifications
+- Government Portal Integration
+- AI Duplicate Detection
+- Multi-language Support
+- Voice-based Complaint Reporting
+- Analytics Dashboard for Cities
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# 👩‍💻 Team
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Team Name:** *Your Team Name*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Name | Role |
+|------|------|
+| Himanshi Srivastava | Full Stack Developer |
+| Member 2 | Backend Developer |
+| Member 3 | UI/UX Designer |
+| Member 4 | AI Developer |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome!
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is developed for the **Myntra Hackathon** and is intended for educational and demonstration purposes.
+
+---
+
+## ⭐ If you like this project, don't forget to star the repository!
